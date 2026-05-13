@@ -95,10 +95,9 @@ export default function Experience() {
             >
               {/* Dot */}
               <span
-                className="absolute -left-[2.15rem] top-1.5 flex h-5 w-5 items-center justify-center rounded-full ring-4"
+                className="absolute -left-[2.15rem] top-1.5 flex h-5 w-5 items-center justify-center rounded-full ring-4 ring-[var(--bg-base)]"
                 style={{
                   background: item.accent,
-                  ringColor: "var(--bg-base)",
                   boxShadow: `0 0 12px ${item.accent}`,
                 }}
               >
