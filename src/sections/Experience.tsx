@@ -90,7 +90,7 @@ export default function Experience() {
               key={item.role}
               initial={{ opacity: 0, x: -24 }}
               animate={inView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 0.6, delay: i * 0.15, ease: [0.16, 1, 0.3, 1] as any }}
               className="relative"
             >
               {/* Dot */}

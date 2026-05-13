@@ -22,7 +22,7 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: -32 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] as any }}
           >
             <p className="section-label">About Me</p>
             <h2 className="section-title">
@@ -48,7 +48,7 @@ export default function About() {
                 key={item.title}
                 initial={{ opacity: 0, x: 32 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.6, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.6, delay: i * 0.12, ease: [0.16, 1, 0.3, 1] as any }}
                 className="glass flex items-start gap-4 rounded-2xl p-5"
               >
                 <span
